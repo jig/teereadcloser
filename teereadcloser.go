@@ -29,5 +29,5 @@ func (t *teeReaderCloser) Read(p []byte) (n int, err error) {
 }
 
 func (t *teeReaderCloser) Close() error {
-	return t.Close()
+	return t.r.Close()
 }
